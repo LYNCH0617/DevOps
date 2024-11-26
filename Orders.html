@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">>
+</head>
+<style>
+     body {
+      box-sizing: border-box;
+        padding-top: 100px;
+      background-color: #FFF;
+      
+    }
+    @media only screen and (min-width: 500px) {
+        .col-sm-6n {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    .box{
+        background-color: #eee;
+        width: 200px;
+        height: 30px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 25px;
+    }
+    input{
+        width: 240px;
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 18px;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .search form{
+      display: flex;
+      align-items: center;
+      margin: 0;
+      position: absolute;
+      right: 50px;
+      top: 10px;
+      background-color: #FFF;
+    }
+    * {box-sizing:border-box}
+</style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/LOGO .png" style="width: 140px;">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="navbar-text">
+                <a class="nav-link" href="./dashboard.html">Dashboard</a>
+              </li>
+              <li class="navbar-text">
+                <a class="nav-link" href="./Design.html">Design</a>
+              </li>
+              <li class="navbar-text">
+                <a class="nav-link" href="./Stocks.html">Stock</a>
+              </li>
+              <li class="navbar-text">
+                <a class="nav-link active" aria-current="page"  href="#">Orders</a>
+              </li>
+              <li class="navbar-text">
+                <a class="nav-link" href="./Review.html">Reviews</a>
+              </li>
+            </ul>
+                 </div>
+            </div>
+          <div class="Search bg-light">
+            <form>
+            <input type="text" placeholder="Search in site">
+            <button type="submit">Go</button>
+            
+          </form>      
+        </div>
+        </div>
+     </nav>
+     <div id="carouselLight" class="carousel carousel-light slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselLight" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselLight" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselLight" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000s">
+            <img src="./assets/Slide1.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+            <img src="./assets/slide3.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000s">
+            <img src="./assets/Slide5.png" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+     <section class="product-section">
+        <div class="container">
+            <h1 style="font-size: 75px;">Orders</h1>
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="./assets/retroskate.png" class="img-fluid">
+                      <h4 class="card-title">Retro Skate</h4>
+                      <h6>Maria Cristina Santos
+                        <br>
+                       ~ recently purchased this item.
+                      </h6>
+                      <h6>Juan Miguel Reyes
+                        <br>
+                       ~ purchased this item 27mins ago.
+                      </h6>
+                      <h6>Angela Marie Garcia
+                        <br>
+                       ~ purchased this item 5days ago. <a href="./cancel.html">Status</a>
+                      </h6>
+                      
+                      <a href="./Payment-status.html" class="btn btn-primary">Accept all orders</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <img src="./assets/skate!.png" class="img-fluid">
+                      <h4 class="card-title">Skate!</h4>
+                      <h6>Carlo Antonio Cruz
+                        <br>
+                       ~ recently purchased this item
+                      </h6>
+                      <h6>Sofia Isabella Rivera
+                        <br>
+                       ~ purchased this item 7mins ago.
+                      </h6>
+                      <h6>Rafael Enrique Dela Cruz
+                        <br>
+                        ~ purchased this item 11mins ago.
+                      </h6>
+                      <a href="./Payment-status.html" class="btn btn-primary">Accept all orders</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="./assets/skategod.png" class="img-fluid">
+                        <h4 class="card-title">Skate God</h4>
+                        <h6>Andrea Nicole Lim
+                            <br>
+                           ~ recently purchased this item
+                          </h6>
+                          <h6>Jose Manuel Martinez
+                            <br>
+                           ~ purchased this item 2mins ago.
+                          </h6>
+                          <h6>Patricia Ann Gonzalez
+                            <br>
+                           ~ purchased this item 13mins ago.
+                          </h6>
+                          <a href="./Payment-status.html" class="btn btn-primary">Accept all orders</a>
+                     </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="./assets/skates.png" class="img-fluid">
+                        <h4 class="card-title">Skates</h4>
+                        <h6>Gabriel Andres Fernandez
+                            <br>
+                           ~ recently purchased this item
+                          </h6>
+                          <h6>Isabelle Marie Tan
+                            <br>
+                           ~ purchased this item 31mins ago.
+                          </h6>
+                          <h6>Luis Miguel Rodriguez
+                            <br>
+                           ~ purchased this item 9hrs ago.
+                          </h6>
+                          <a href="./Payment-status.html" class="btn btn-primary">Accept all orders</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="./assets/SkullCrusher.png" class="img-fluid">
+                        <h4 class="card-title">Skull Crusher</h4>
+                        <h6>Camille Angela Perez
+                            <br>
+                          ~ recently purchased this item
+                          </h6>
+                          <h6>Marco Antonio Santos
+                            <br>
+                           ~ purchased this item 2mins ago.
+                          </h6>
+                          <h6>Katrina Marie Dela Rosa
+                            <br>
+                           ~ purchased this item 8mins ago.
+                          </h6>
+                          <a href="./Payment-status.html" class="btn btn-primary">Accept all orders</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="./assets/wingskate.png" class="img-fluid">
+                        <h4 class="card-title">Wing Skate</h4>
+                        <h6>Miguel Angelo Cruz
+                            <br>
+                            ~ recently purchased this item
+                          </h6>
+                          <h6>Sofia Beatriz Reyes
+                            <br>
+                            ~ purchased this item 29mins ago.
+                          </h6>
+                          <h6>Andrei Sebastian Garcia
+                            <br>
+                             ~ purchased this item 1hr ago.
+                          </h6>
+                          <a href="./Payment-status.html" class="btn btn-primary">Accept all orders</a>
+                      </div>
+                    </div>
+                  </div>
+             </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

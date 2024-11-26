@@ -1,0 +1,95 @@
+<html>
+<head>
+    <title>NEXGEN Admin</title>
+    <link rel="stylesheet" href="./dashboard.html">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./assets/bflog.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.icon{
+    margin: 30px auto;
+    text-align: center;
+}
+
+.icon img{
+    width: 250px;
+    margin: 0 12px;
+    cursor: pointer;
+    border-radius: 0%;
+}
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 15px 0;
+    margin: 10px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #999395,#3f3c35);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login{
+    left: 50px;
+}
+</style>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="icon">
+                <img src="./assets/LOGO .png">                
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <br>
+                <br>
+                <br>
+                <button type="button" onclick="location.href='./dashboard.html'" class="submit-btn">Login as Admin</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
